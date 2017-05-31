@@ -1,0 +1,213 @@
+body{margin: 0; padding: 0;}
+
+#header{
+  width: 0;
+  height: 0;
+  background: #f4470d;
+  float: left;
+  color: #ffffff;
+}
+
+#logo{
+  float: left;
+}
+
+#login{
+  background: blue;
+  width: 170px;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.loginsection{
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  float: left;
+  background: #f4470d;
+}
+
+    .loginsection a:link{
+      color: white;
+      text-decoration: none;
+    }
+    .loginsection a:visited{
+      color: white;
+    }
+    .loginsection a:hover{
+      color: #999;
+    }
+
+#logins{
+  position: absolute;
+  display: none;
+  float: left;
+}
+#Logframe{
+  width: 600px;
+  height: 300px;
+  background: white;
+  margin: auto;
+  margin-top: 150px;
+  border-radius: 10px;
+}
+
+#signups{
+  position: absolute;
+  display: none;
+  float: left;
+}
+
+#Registrationframe{
+  background: white;
+  margin: auto;
+  border-radius: 10px;
+  color: black;
+}
+
+
+.Logframes{
+  width: 500px;
+  height: 400px;
+  margin: auto;
+}
+
+.Registrationframe{
+  width: 500px;
+  height: 400px;
+  margin: auto;
+}
+
+.no{display: none;}
+
+
+#exit{
+  width: 100%;
+  float: left;
+  font-size: 20px;
+}
+
+#exit2{
+  width: 20px;
+  height: 20px;
+  float: right;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+      #exit2 a:link{
+        color: black;
+        text-decoration: none;
+      }
+      #exit2 a:visited{
+        color: black;
+      }
+      #exit2 a:hover{
+        color: #999;
+      }
+
+#abc{
+  color: black;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  font-size: 20px;
+}
+
+#facebook{
+  width: 100%;
+  height: 120px;
+  float: left;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#logout{
+  width: 100px;
+  height: 50px;
+  line-height: 50px;
+  margin: auto;
+  border-radius: 10px;
+  background: red;
+  text-align: center;
+}
+
+#tt{
+  float: right;
+  display: none;
+}
+
+#tt2{
+  float: left;
+  width: 40px;
+  height: 40px;
+  margin-top: 5px;
+}
+
+#tt3{
+  float: left;
+  width:150px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+}
+
+#tt4{
+  float: left;
+  width: 30px;
+  height: 30px;
+  margin-top: 10px;
+}
+
+#home{
+  float: left;
+}
+
+.home1{
+  width: 40%;
+  height: 100%;
+  float: left;
+  text-align: center;
+}
+
+.home2{
+  width: 60%;
+  height: 100%;
+  float: left;
+  text-align: center;
+}
+
+.apptext{
+  margin-top: 10px;
+}
+.apptext2{
+  margin-top: 20px;
+}
+
+.imghome{
+  width: 80%;
+  height: 80%;
+  background: url('./img/img.jpg');
+  margin: auto;
+  border-radius: 10px;
+}
+
+.menu{
+  margin: 10px;
+  position: absolute;
+  display: none;
+}
+#footer{
+  width: 100%;
+  min-height: 50px;
+  float: left;
+  background:#f4470d;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+}
+
+#ttfooter{
+  width: 80%;
+  margin: auto;
+}

@@ -1,0 +1,43 @@
+@media only screen and (max-width: 1000px) {
+    .home2 {
+        display: none;
+    }
+    .home1{
+      width: 100%;
+    }
+    #Logframe{
+      width: 90%;
+    }
+
+    .body{
+      position: relative;
+    }
+
+    #nav{
+      position: absolute;
+      left: -250px;
+      transition: 0.5s;
+    }
+
+    .menu{
+      margin: 10px;
+      position: absolute;
+      display: block;
+    }
+
+    #note{
+      width: 100%;
+    }
+
+    #home{
+      height: 550px;
+      float: left;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+  #footer{
+    line-height: 25px;
+  }
+}
