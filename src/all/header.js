@@ -5,6 +5,10 @@ import logout from './img/logout.png';
 import img from './img/img.jpg';
 import iconfb from "./img/iconfb.png"
 import menu from "./img/menu.png"
+import overview from "./img/overview.png"
+import android from "./img/android.png"
+import ios from "./img/ios.png"
+import pc from "./img/pc.png"
 
 export default class HEADERREACT extends Component {
 
@@ -69,25 +73,23 @@ export default class HEADERREACT extends Component {
     var x = document.getElementById("home");
     if(x){
       document.getElementById("home").style.width=  document.body.clientWidth+"px";
-      if(document.documentElement.clientHeight >=400){
-        document.getElementById("home").style.height= document.documentElement.clientHeight-50+"px";
-      }
-    }
-    if(document.documentElement.clientHeight <400 ){
-      document.getElementById("home").style.height = "400px";
-    }
+      document.getElementById("home").style.minHeight=document.documentElement.clientHeight+"px";
+      document.getElementById("homes").style.width=  document.body.clientWidth+"px";
+      document.getElementById("homes").style.Height=document.documentElement.clientHeight+"px";
+      document.getElementById("home1").style.height=document.documentElement.clientHeight-90+"px";
+      document.getElementById("home2").style.height=document.documentElement.clientHeight-90+"px";
 
+    }
   }
 
 
   applogo(){
     document.getElementById("applogo").style.marginTop = document.documentElement.clientHeight/5+"px";
-    document.getElementById("imghome").style.marginTop= "60px";
     if(document.documentElement.clientHeight <600 ){
       document.getElementById("applogo").style.marginTop = "50px";
       document.getElementById("applogo").style.width = "100px";
       document.getElementById("applogo").style.height = "100px";
-      document.getElementById("imghome").style.marginTop= "40px";
+
     }
   }
 
@@ -161,6 +163,7 @@ export default class HEADERREACT extends Component {
         }
       }
 
+
     render() {
       const thongtin = this.state;
 
@@ -187,21 +190,87 @@ export default class HEADERREACT extends Component {
           </header>
 
           <div id="home">
-            <div className="home1">
-                <div><img src={logo}  height="150" width="150" id="applogo" alt="logo" /></div>
-                <h1><p className="apptext">To-Do React</p></h1>
-                <p className="apptext2">From work to play, To-Do is the easiest </p>
-                <p className=""> way to get stuff done, every day.</p>
-                  <div id="login">
-                    <div className="loginsection" onClick={this.loginclick.bind(this)}><a href="#">Login</a></div>
+              <div id="homes">
+                <div id="home1">
+                    <div><img src={logo}  height="150" width="150" id="applogo" alt="logo" /></div>
+                    <h1><p className="apptext">To-Do React</p></h1>
+                    <p className="apptext2">From work to play, To-Do is the easiest </p>
+                    <p className=""> way to get stuff done, every day.</p>
+                      <div id="login">
+                        <div className="loginsection" onClick={this.loginclick.bind(this)}><a href="#">Login</a></div>
+                      </div>
+                </div>
+                <div id="home2"></div>
+
+                <div id="footer">
+                  <div id="footeroverview">
+                    <div className="overview">
+                      <div className="overviewtop"><img src={overview}  height="40" width="40" className="imgoverview" id="" alt="overview"/></div>
+                      <div className="overviewbot">Overview</div>
+                    </div>
+
+                    <div className="overview">
+                      <div className="overviewtop"><img src={android}  height="40" width="40" className="imgoverview" id="" alt="android"/></div>
+                      <div className="overviewbot">Android</div>
+                    </div>
+
+                    <div className="overview">
+                      <div className="overviewtop"><img src={ios}  height="40" width="40" className="imgoverview" id="" alt="ios"/></div>
+                      <div className="overviewbot">Ios</div>
+                    </div>
+
+                    <div className="overview">
+                      <div className="overviewtop"><img src={pc}  height="40" width="40" className="imgoverview" id="" alt="pc"/></div>
+                      <div className="overviewbot">Web</div>
+                    </div>
                   </div>
-            </div>
-            <div className="home2">
-                <div className="imghome" id="imghome"></div>
-            </div>
-            <div id="footer">
-              <div id="ttfooter">Find out how To-Do empowers  you to accomplish more</div>
-            </div>
+                </div>
+              </div>
+              <hr/>
+
+              <div id="overview1">
+                <div className="div1"></div>
+                <div className="div2">
+                    <div className="textdiv">
+                      <h2>Access tasks everywhere</h2><br/>
+                      <p>
+                          With apps and extensions for 10+ platforms,<br/>
+                          your tasks are always there: on mobile devices,<br/>
+                          web browsers, inboxes, and more.
+                      </p>
+                    </div>
+                </div>
+              </div>
+
+              <div id="overview2">
+                <div className="div1">
+                    <div className="textdiv">
+                      <h2>Collaborate on shared tasks</h2><br/>
+                      <p>
+                          Share unlimited tasks with anyone – <br/>
+                          colleagues, family, friends – and collaborate <br/>
+                          in real-time on shared projects and goals.
+                      </p>
+                    </div>
+                </div>
+                <div className="div2"></div>
+              </div>
+
+              <div id="overview3">
+                <div className="div1"></div>
+                <div className="div2">
+                    <div className="textdiv">
+                      <h2>Distraction-free design</h2><br/>
+                      <p>
+                          Your tasks are a big part of your life. Stay <br/>
+                          motivated and organized with Todoist’s <br/>
+                          intuitive and beautiful to do list.
+                      </p>
+                    </div>
+                </div>
+              </div>
+
+
           </div>
 
 

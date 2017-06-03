@@ -1,4 +1,7 @@
-body{margin: 0; padding: 0;}
+body{
+  margin: 0;
+  padding: 0;
+}
 
 #header{
   width: 0;
@@ -163,16 +166,20 @@ body{margin: 0; padding: 0;}
   float: left;
 }
 
-.home1{
+#homes{
+  float: left;
+  background: url('./img/img.jpg');
+  background-size: cover;
+}
+
+#home1{
   width: 40%;
-  height: 100%;
   float: left;
   text-align: center;
 }
 
-.home2{
+#home2{
   width: 60%;
-  height: 100%;
   float: left;
   text-align: center;
 }
@@ -184,14 +191,6 @@ body{margin: 0; padding: 0;}
   margin-top: 20px;
 }
 
-.imghome{
-  width: 80%;
-  height: 80%;
-  background: url('./img/img.jpg');
-  margin: auto;
-  border-radius: 10px;
-}
-
 .menu{
   margin: 10px;
   position: absolute;
@@ -199,15 +198,100 @@ body{margin: 0; padding: 0;}
 }
 #footer{
   width: 100%;
-  min-height: 50px;
+  min-height: 90px;
   float: left;
-  background:#f4470d;
-  color: white;
   text-align: center;
-  line-height: 50px;
 }
 
-#ttfooter{
-  width: 80%;
+#footeroverview{
+  width: 480px;
+  height: 80px;
   margin: auto;
+  margin-top:10px;
+}
+
+.overview{
+  width: 120px;
+  height: 80px;
+  float: left;
+}
+.overviewtop{
+  width: 120px;
+  height: 50px;
+  float: left;
+}
+.overviewbot{
+  width: 120px;
+  height: 30px;
+  float: left;
+  text-align: center;
+  line-height: 30px;
+  color: black;
+  font-size: 15px;
+  font-family: 'open sans';
+}
+
+.imgoverview{
+  margin:5px;
+}
+
+#overview1{
+  width: 100%;
+  height: 800px;
+  float: left;
+  background: url('./img/imgoverview.jpg') center no-repeat;
+  background-size: cover;
+}
+
+#overview2{
+  width: 100%;
+  height: 800px;
+  float: left;
+  background: url('./img/imgoverview2.jpg') center no-repeat;
+  background-size: cover;
+}
+
+#overview3{
+  width: 100%;
+  height: 800px;
+  float: left;
+  background: url('./img/imgoverview3.jpg') center no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.div1{
+  width: 50%;
+  height: 100%;
+  float: left;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+}
+    .div1 p{
+      color: #7d8485;
+    }
+    .div1 h2{
+      color: #4b4b4c;
+    }
+.div2{
+  width: 50%;
+  height: 100%;
+  float: left;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+}
+    .div2 p{
+      color: #7d8485;
+    }
+    .div2 h2{
+      color: #4b4b4c;
+    }
+
+.textdiv{
+  width: 100%;
+  min-height: 100px;
+  margin: auto;
+  margin-top: 300px;
 }

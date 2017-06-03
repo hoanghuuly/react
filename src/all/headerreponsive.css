@@ -33,11 +33,28 @@
       height: 550px;
       float: left;
     }
+    #home2{
+      display: none;
+    }
+    #home1{
+      width: 100%;
+    }
 
 }
 
-@media only screen and (max-width: 500px) {
-  #footer{
-    line-height: 25px;
+
+@media only screen and (max-width: 600px) {
+
+  #footeroverview{
+    width: 300px;
+  }
+  .overview{
+    width: 75px;
+  }
+  .overviewtop{
+    width: 75px;
+  }
+  .overviewbot{
+    display: none;
   }
 }

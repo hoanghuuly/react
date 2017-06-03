@@ -4,6 +4,8 @@ import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import './index.css';
 import * as firebase from 'firebase';
+  import { BrowserRouter as Router, Route, Link, Redirect, withRouter } from 'react-router-dom';
+
 
 var config = {
    apiKey: "AIzaSyActFltACdaIaYqnzXAlWw3PRlgg7aoYzw",
@@ -15,5 +17,14 @@ var config = {
  };
  firebase.initializeApp(config);
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ ReactDOM.render((
+   <Router>
+     <div>
+      <Route path="/" component={App} />
+
+
+     </div>
+  </Router>),
+   document.getElementById('root')
+ );
 registerServiceWorker();
